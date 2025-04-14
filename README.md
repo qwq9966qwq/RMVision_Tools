@@ -50,6 +50,11 @@ python3 calibration.py --image_size 1920x1080 --mode calibrate --corner 8x6 --sq
 3. 运行`Calibration.py`进行量化压缩
 4. 运行`Compare.py`进行精度与性能对比
 
+效果展示：
+![微信图片_20250414202213](https://github.com/user-attachments/assets/cd61346c-29cb-4394-b4de-1311e7c40e96)
+![微信图片_20250414202225](https://github.com/user-attachments/assets/9772ab87-e4ac-4c20-806b-94839a954dbe)
+
+
 ## 雷达相机联合标定
 
 支持ROS2的雷达与相机自动联合标定工具。
