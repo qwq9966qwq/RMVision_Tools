@@ -1,0 +1,18 @@
+lidar_camera_calib:
+    ros__parameters:
+        # Data path. adjust them!
+        image_file: "/home/guo/Lidar_BiaoDing/src/lidar_camera_calib/data/picture/image.png"
+        pcd_file: "/home/guo/Lidar_BiaoDing/src/lidar_camera_calib/data/pcd/map.pcd"
+        result_file: "/home/guo/Lidar_BiaoDing/src/lidar_camera_calib/result/extrinsic.txt"
+
+        # Camera Parameters. Adjust them!
+        camera_matrix: [1657.143435505400, 0.0, 637.3719906835523, 
+		        0.0, 1661.926273512718, 500.2143676919678,
+		        0.0, 0.0, 1.0]
+        dist_coeffs: [-0.1044141977135855, 0.8898922543111687, -0.003410767976731986, 0.006464374040684266, 0.0]
+
+        # Calibration Parameters.!
+        calib_config_file: "/home/guo/Lidar_BiaoDing/src/lidar_camera_calib/config/config_indoor.yaml"
+        use_rough_calib: true # set true if your initial_extrinsic is bad
+        save_img: true
+        folder: "/home/guo/Lidar_BiaoDing/src/lidar_camera_calib/result"
