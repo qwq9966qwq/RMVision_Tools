@@ -7,6 +7,7 @@
 - [Camera_BiaoDing(相机标定)](#相机标定程序)
 - [Calibration(模型量化压缩)](#模型量化工具)
 - [Lidar_BiaoDing(雷达相机联合标定)](#雷达相机联合标定)
+- [Weights_conversions(权重转化)——新增](#权重转化程序)
 
 ## 相机标定程序
 
@@ -71,3 +72,26 @@ python3 calibration.py --image_size 1920x1080 --mode calibrate --corner 8x6 --sq
 1. 按照教程顺序步骤运行
 2. 在雷达进行bag包记录的同时，使用标定过的相机进行拍照
 3. 按照教程运行标定程序完成联合标定
+
+## 权重转化程序
+主要包含PT权重转化为Onnx权重以及Onnx权重转化为openvino(bin和xml)权重以及TensorRT权重(engine)
+
+### 包含内容
+
+- **PT_conversions**：一键转化，包括所有转化，输入PT路径，输出onnx和openvino以及TensorRT的权重
+- **Onnx_TensorRT**：Onxx权重转换为TensorRT权重程序
+- **PT_Onnx**：PT转Onnx权重程序
+- **PT_Openvino**：PT转Openvino权重程序，包含网格xml权重以及参数权重bin
+
+### 推理引擎介绍
+- **PyTorch**：PT原生的推理引擎，训练模型输出的就是这种权重
+- **Onnxruntime**：跨平台通用推理引擎，转到Linux系统下搭建推理程序的时候的首选，操作简便，YOLO官方自带转化接口函数
+- **Openvino**：Intel的推理引擎，为Intel专门推出的，可以使用Intel的CPU以及集成GPU进行推理，常规NUC或者迷你主机的首选，支持INT8量化(因为不具备NVIDA的GPU)
+- **TensorRT**：NVIDA推出的推理引擎，性能最为强劲，但是受限成本无法实际部署，可以在Jeston nano上进行部署，支持FP16精度权重
+
+### 效果展示
+TensorRT转换：
+![8fc381b50385cd2e33315f78a4b5200](https://github.com/user-attachments/assets/d05bbbc5-40d6-4d07-a002-41b3b5be0b38)
+
+Openvino转换：
+![b2b7b9d5bf1dd3d3b50350ba70c83b4](https://github.com/user-attachments/assets/bd795f04-776b-4633-a42f-d44086811893)
