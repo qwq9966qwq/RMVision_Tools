@@ -7,8 +7,21 @@
 - [Camera_BiaoDing(相机标定)](#相机标定程序)
 - [Calibration(模型量化压缩)](#模型量化工具)
 - [Lidar_BiaoDing(雷达相机联合标定)](#雷达相机联合标定)
-- [Weights_conversions(权重转化)——新增](#权重转化程序)
+- [Weights_conversions(权重转化)](#权重转化程序)
+- [Code_Analysis(代码文件结构分析——新增)](#代码文件结构分析)
 
+## 代码文件结构分析
+
+用于分析文件夹内的代码结构，生成对应的树状结构字符描述，清晰明朗
+
+### 配置file_analyzer.conf
+
+可配置分析文件夹的路径，支持text, json, xml, html以及终端直接输出（彩色）
+
+示例：
+![image](https://github.com/user-attachments/assets/c991632d-8ecd-4ac3-b07e-7a60dde6a760)
+
+  
 ## 相机标定程序
 
 用于相机内参标定，包含标定程序与标定后的海康与迈德威视相机内参。
