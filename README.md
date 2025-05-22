@@ -106,5 +106,3 @@ python3 calibration.py --image_size 1920x1080 --mode calibrate --corner 8x6 --sq
 TensorRT转换：
 ![8fc381b50385cd2e33315f78a4b5200](https://github.com/user-attachments/assets/d05bbbc5-40d6-4d07-a002-41b3b5be0b38)
 
-Openvino转换：
-![b2b7b9d5bf1dd3d3b50350ba70c83b4](https://github.com/user-attachments/assets/bd795f04-776b-4633-a42f-d44086811893)
