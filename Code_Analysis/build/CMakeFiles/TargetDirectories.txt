@@ -1,0 +1,8 @@
+/home/guo/Code_Analysis/build/CMakeFiles/file_analyzer.dir
+/home/guo/Code_Analysis/build/CMakeFiles/test.dir
+/home/guo/Code_Analysis/build/CMakeFiles/edit_cache.dir
+/home/guo/Code_Analysis/build/CMakeFiles/rebuild_cache.dir
+/home/guo/Code_Analysis/build/CMakeFiles/list_install_components.dir
+/home/guo/Code_Analysis/build/CMakeFiles/install.dir
+/home/guo/Code_Analysis/build/CMakeFiles/install/local.dir
+/home/guo/Code_Analysis/build/CMakeFiles/install/strip.dir

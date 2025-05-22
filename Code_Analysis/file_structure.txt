@@ -1,0 +1,121 @@
+===================================================
+  文件结构分析报告
+===================================================
+分析根目录: ITL_Autoaim
+===================================================
+
+ITL_Autoaim
+├── [config]
+│   ├── base.param.toml
+│   └── robomaster_vision_config.yaml
+├── [log]
+│   ├── [latest]
+│   │   └── logger_all.log
+│   ├── [latest_list]
+│   │   └── logger_all.log
+│   ├── [list_2025-05-17_17-42-03]
+│   │   └── logger_all.log
+│   └── COLCON_IGNORE
+├── [src]
+│   ├── [Messages]
+│   │   ├── [include]
+│   │   │   └── vision_messages.hpp
+│   │   └── CMakeLists.txt
+│   ├── [UltraMultiThread]
+│   │   ├── [example]
+│   │   │   └── example.cpp
+│   │   ├── [include]
+│   │   │   └── [umt]
+│   │   │       ├── Message.hpp
+│   │   │       ├── ObjManager.hpp
+│   │   │       └── umt.hpp
+│   │   └── CMakeLists.txt
+│   ├── [base]
+│   │   ├── [debug]
+│   │   │   ├── debug.cpp
+│   │   │   └── debug.hpp
+│   │   ├── [math]
+│   │   │   ├── [filter]
+│   │   │   │   ├── adaptive_ekf.hpp
+│   │   │   │   ├── filter.hpp
+│   │   │   │   └── kalman.hpp
+│   │   │   ├── math.cpp
+│   │   │   └── math.hpp
+│   │   ├── [robot]
+│   │   │   ├── coord_converter.cpp
+│   │   │   └── coord_converter.hpp
+│   │   ├── CMakeLists.txt
+│   │   └── armor_defs.hpp
+│   ├── [base_all]
+│   │   ├── [debug]
+│   │   │   ├── debug.cpp
+│   │   │   └── debug.hpp
+│   │   ├── [param]
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── entry.cpp
+│   │   │   ├── parameter.cpp
+│   │   │   └── parameter.hpp
+│   │   └── CMakeLists.txt
+│   ├── [camera_package]
+│   │   ├── [include]
+│   │   │   ├── armor_classifer.txt
+│   │   │   ├── armor_detector.hpp
+│   │   │   └── camera_catch.hpp
+│   │   ├── [src]
+│   │   │   ├── armor_classifer.txt
+│   │   │   ├── armor_detector.cpp
+│   │   │   └── camera_catch.cpp
+│   │   └── CMakeLists.txt
+│   ├── [predictor]
+│   │   ├── [aim]
+│   │   │   ├── aim_corrector.cpp
+│   │   │   ├── aim_corrector.hpp
+│   │   │   ├── detect_bullet.cpp
+│   │   │   ├── detect_bullet.hpp
+│   │   │   ├── do_reproj.cpp
+│   │   │   └── do_reproj.hpp
+│   │   ├── [enemy]
+│   │   │   ├── armor_identifier.cpp
+│   │   │   ├── armor_identifier.hpp
+│   │   │   ├── balance.cpp
+│   │   │   ├── balance.hpp
+│   │   │   ├── enemy_state.cpp
+│   │   │   ├── enemy_state.hpp
+│   │   │   ├── outpost_fixer.cpp
+│   │   │   └── outpost_fixer.hpp
+│   │   ├── [enemy_predictor]
+│   │   │   ├── enemy_predictor.cpp
+│   │   │   └── enemy_predictor.hpp
+│   │   ├── [motion]
+│   │   │   ├── armor_model.cpp
+│   │   │   ├── armor_model.hpp
+│   │   │   ├── enemy_model.cpp
+│   │   │   ├── enemy_model.hpp
+│   │   │   ├── lmtd_top_model.cpp
+│   │   │   ├── lmtd_top_model.hpp
+│   │   │   ├── top4_model.cpp
+│   │   │   ├── top4_model.hpp
+│   │   │   ├── top_model.cpp
+│   │   │   └── top_model.hpp
+│   │   ├── [pnp]
+│   │   │   ├── pnp.cpp
+│   │   │   └── pnp.hpp
+│   │   ├── CMakeLists.txt
+│   │   └── entry.cpp
+│   └── main.cpp
+└── CMakeLists.txt
+
+===================================================
+统计信息:
+===================================================
+目录数: 29
+文件数: 70
+
+文件类型统计:
+.cpp: 25 个文件
+.hpp: 29 个文件
+.log: 3 个文件
+.toml: 1 个文件
+.txt: 10 个文件
+.yaml: 1 个文件
+===================================================
